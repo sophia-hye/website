@@ -1,7 +1,28 @@
 ---
-title: "About"
+title: "Jihye Kim (Sophia)"
+subtitle: "Data Scientist/ Data Handler"
+image: images/profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: website
+      text: Website
+      href: sophia-hye/website
+    - icon: github
+      text: Github
+      href: https://github.com/sophia-hye
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/sophia/
+    - icon: notion
+      text: Notion
+      href: https://www.notion.so/Jr-Data-Handler-a459f670de634382a07c489159ec938b
 ---
 
-About this site
+## 
 
+## **Enthusiastic Data Scientist**
 
+### Interests
+
+Data Modeling, ML/DL, Data Visualization, Data Pipeline, Data Engineering

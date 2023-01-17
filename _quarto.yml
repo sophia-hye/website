@@ -2,18 +2,85 @@ project:
   type: website
 
 website:
-  title: "test"
+  title: "Sophia-Hye"
+  site-url: my.website.url # TODO
+  description: "A great sample blog" # TODO
   navbar:
+    background: dark
+    logo: ./images/logo.png # TODO
+    search: true
+    collapse-below: lg
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: cv/index.qmd 
+        text: "CV"
+      - text: "Projects"
+        href: projects/index.qmd 
+      - text: "Blog"
+        href: blog/index.qmd
+
+    right:
+      - text: Me
+        href: about.qmd
+      - icon: github
+        href: https://github.com/kmink3225 # TODO
+        aria-label: Github
+      - icon: linkedin
+        href: https://www.linkedin.com/in/kwangmin-kim-a5241b200/ # TODO
+        aria-label: Linkedin
+      - icon: notion
+        href: https://www.notion.so/sophia-journal/Jr-Data-Handler-a459f670de634382a07c489159ec938b # TODO
+        aria-label: Notion
+      - icon: rss
+        href: blog/index.qmd
+      #- icon: envelope
+      #  href: kmink3225@gmail.com
+      #  aria-label: Email
+        
+  sidebar: 
+    - id: Projects
+      style: "floating"
+      collapse-level: 1
+      backgournd: light
+      align: left
+      contents:
+        - text: "Projects"
+          href: projects/index.qmd
+        - section: "High Dimension"  
+          contents:
+            - projects/high_dimension/description.qmd
+            - projects/high_dimension/data_preparation.qmd
+    - id: cv
+      title: "cv" 
+      style: "floating"
+      collapse-level: 2
+      backgournd: light
+      align: left
+      contents:
+        - cv/index.qmd
+        - text: "Resume"
+          href: cv/Resume.pdf
+        - text: "CV"
+          href: cv/cv.qmd
 
 format:
   html:
-    theme: cosmo
+    # basic design
+    #   - flatly: navy
+    #   - materia: blue
+    #   - sandstone: sand color
+    #   - slate: dark gray basic design
+    # 3D design
+    #   - morph: 양각 버튼 (3D 느낌)
+    #   - quartz: gradient
+    #   - vapor: cybertic design based on purple, cyan
+    #   - sketchy: hand-drawn
+    # color point (simple 2D)
+    #   - simplex: red point
+    #   - united: ubuntu style (orange point)
+    theme: slate
     css: styles.css
     toc: true
 
 editor: visual
-
